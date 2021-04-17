@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* font Family
+
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+
+*/
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/**************************
+	header section css
+**************************/
+header{
+	width: 100%;
+	background: black;
+}
+.nav-link{
+	color: white !important;
+	font-size: 16px;
+	font-weight: 600;
+	margin-left: 16px;
+}
+.nav-link:hover{
+	color: #92989b !important;
+	font-weight: 600;
+}
+.banner{
+	width: 100%;
+	background: url(../img/background\ 1.png) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.banner-text,.banner-form{
+	display: table-cell;
+	height: 96vh;
+	vertical-align: middle;
+}
+.banner-title{
+	color: white;
+	font-weight: 600;
+	font-size: 86px;
+	font-family: 'Open Sans', sans-serif;
+}
+.banner-title span{
+	font-weight: 300;
+	color: #ff9b51;
+}
+.banner-titl{
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-size: 36px;
+	font-weight: 400;
+}
+.banner-text p{
+	color: #aaa;
+	font-family: 'Raleway', sans-serif;
+	width: 70%;
+	margin-bottom: 32px;
+}
+.banner-text .line{
+	height: 4px;
+	background: white;
+	width: 100px;
+	margin: 32px 0px;
+}
+.banner-btn{
+	padding: 14px 42px;
+	background: transparent;
+	color: white;
+	border: 1px solid white;
+	font-family: 'Raleway', sans-serif;
+	border-radius: 0px 10px;
+}
+.banner-btn:hover{
+	background: #fa9951;
+	color: black;
+	transition: 0.3s;
+	border-radius: 10px 0px;
+	font-family: 'Raleway', sans-serif;
+
+}
+.banner-form h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	color: #333333;
+	font-weight: 600;
+	margin: 12px 0px;
+}
+.banner-form h3 span{
+	color: #fa9951;
+}
+.banner-form .card{
+	width: 360px;
+}
+
+.banner-form .card-header{
+	background: #f5f5f5;
+	text-align: center;
+
+}
+.banner-form .form-control{
+	border: none;
+	border-bottom: 1px solid #999999;
+	border-radius: 0;
+	padding-top: 42px;
+	outline: none;
+}
+.banner-form .card-body{
+	padding: 32px;
+}
+.last{
+	margin-bottom: 0px !important;
+}
+.banner-form .form-control:focus{
+	box-shadow: none;
+	outline: none;
+} 
+.banner-form .Submit-btn {
+	width: 100%;
+	padding: 16px;
+	background: #ff9b51;
+	border: none;
+}
+.banner-form .card-footer{
+	background: #ff9b51;
+	padding: 0;
+}
+/*************************
+	social icon section css
+*************************/
+
+.social-area {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+.social-top h2 {
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	padding-top: 20px;
+}
+.social-top p {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	width: 425px;
+	color: #B5ABAB;
+}
+.social-bottom{
+	margin-top: px;
+}
+.social-bottom ul {
+	margin: 0;
+	line-height: 110px;
+}
+.social-bottom ul li img:hover {
+	cursor: pointer;
+}
+.social-bottom ul li {
+	display: inline;
+	list-style: none;
+	padding-right: 68px;
+	font-size: 35px;
+	color: #a19f9d;
+}
+.social-bottom ul li:hover{
+	color: #ff8b38;
+	transform: scale(2.0) rotate(15deg);
+}
+/****************************
+	feayures section css
+****************************/
+
+.features-area {
+	width: 100%;
+	padding: 80px 0px;
+	background: #f5f5f5;
+}
+.col-md-2 {
+	padding: 0;
+}
+.features-tab {
+	padding: 0;
+}
+.tab {
+	list-style: none;
+	background: #333333;
+	color: #fff;
+	height: 110px;
+	width: 110px;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+	line-height: 110px;
+	transition: 0.3s;
+}
+.tab:hover{
+	cursor: pointer;
+	background: #ff8b38 !important;
+	transition: 0.3s;
+}
+.tab:first-child {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.tab:last-child{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.features-text h2 {
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+.features-text p {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	width: 500px;
+	line-height: 24px;
+	color: #9b9595;
+}
+.features-text button {
+	padding: 10px 25px;
+	font-size: 15px;
+	background: #ff8b38;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+}
+.features-text button:hover {
+	cursor: pointer;
+	background: #565856;
+	transition: 0.3s;
+	color: #fff;
+}
+.features-image {
+	margin-top: 20px;
+	text-align: center;
+}
+.colour {
+	cursor: pointer;
+	background: #ff8b38 !important;
+	transition: 0.3s;
+}
+/*****************
+	footer css
+******************/
+.social-footer{
+	background: black;
+    width: 100%;
+    padding: 20px 0px 20px 0px;    text-align: center;
+}
+.social-footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 24px;
+    font-size: 32px;
+    letter-spacing: 24px;
+	color: white;
+	
+}
+.social-footer p {
+    font-family: 'Open Sans', sans-serif;
+    color: #878787;
+    font-size: 14px;
+    line-height: 8px;
+}
+.social-footer ul li:hover{
+	color: #ff8b38;
+	transform: scale(2.0) rotate(15deg);
+}
