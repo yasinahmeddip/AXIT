@@ -1,7 +1,83 @@
+/* Global CSS Start from here */
 *{
     margin: 0;
     padding: 0;
 }
+/* Global CSS End here */
+
+/* ========= Base / Desktop (>= 992px) ========= */
+/* Responsive Tokens Start from here */
+:root{
+    --fs-body: 18px;
+    --lh-body: 1.7;
+
+    --fs-h1: 48px; --lh-h1: 1.2;
+    --fs-h2: 40px; --lh-h2: 1.25;
+    --fs-h3: 32px; --lh-h3: 1.3;
+    --fs-h4: 24px; --lh-h4: 1.35;
+    --fs-h5: 20px; --lh-h5: 1.4;
+    --fs-h6: 18px; --lh-h6: 1.45;
+
+    --fs-p: 18px; --lh-p: 1.75;
+    --fs-small: 14px;
+
+    --fs-btn: 16px; /* Desktop button text */
+    --btn-minh: 44px; /* Touch-friendly height */
+    --btn-pad: 0.6rem 1.2rem;
+
+    --fs-card-title: 20px;
+    --fs-card-subtitle: 16px;
+    --fs-card-text: 16px;
+
+    --section-pad: 56px; /* section vertical spacing */
+    --gap: 1rem; /* grid gap */
+
+    --color-body: #212529;
+    --color-muted: #6c757d;
+    --color-btn-bg: #ff8b38;
+    --color-btn-text: #ffffff;
+}
+/* Responsive Tokens End here */
+
+html{
+    scroll-behavior: smooth;
+    /* Prevent layout shift when vertical scrollbar appears */
+    scrollbar-gutter: stable;
+    /* Stabilize width across pages and block sideways scroll */
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+html,body{ margin:0; }
+body{
+    font: 400 var(--fs-body)/var(--lh-body) system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--color-body);
+    overflow-x: hidden; /* prevent sideways scroll on devices */
+}
+section{ padding-block: var(--section-pad); }
+img{ max-width:100%; height:auto; display:block; }
+
+h1{ font-size: var(--fs-h1); line-height: var(--lh-h1); margin:0 0 .5em; }
+h2{ font-size: var(--fs-h2); line-height: var(--lh-h2); margin:0 0 .6em; }
+h3{ font-size: var(--fs-h3); line-height: var(--lh-h3); margin:0 0 .6em; }
+h4{ font-size: var(--fs-h4); line-height: var(--lh-h4); margin:0 0 .7em; }
+h5{ font-size: var(--fs-h5); line-height: var(--lh-h5); margin:0 0 .7em; }
+h6{ font-size: var(--fs-h6); line-height: var(--lh-h6); margin:0 0 .8em; }
+p { font-size: var(--fs-p); line-height: var(--lh-p); margin:0 0 1em; }
+small{ font-size: var(--fs-small); }
+
+.btn, .button, button{
+    font-size: var(--fs-btn);
+    line-height: 1.2;
+    min-height: var(--btn-minh);
+    padding: var(--btn-pad);
+}
+
+.card .card-title{ font-size: var(--fs-card-title); line-height: 1.35; margin-bottom:.4rem; }
+.card .card-subtitle{ font-size: var(--fs-card-subtitle); opacity:.8; margin-bottom:.5rem; }
+.card .card-text, .card p{ font-size: var(--fs-card-text); line-height: 1.7; color: #495057; }
+
+/* Common grid helper (optional) */
+.grid{ display:grid; gap: var(--gap); grid-template-columns: 1fr; }
 /* font Family
 
 	font-family: 'Open Sans', sans-serif;
@@ -14,90 +90,133 @@ ul{
 	padding: 0;
 }
 
-/**************************
-	header section css
-**************************/
+/* Header CSS Start from here */
 header{
-	width: 100%;
-	background: black;
+    width: 100%;
+    background: black;
+}
+header.sticky{ box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+.navbar{
+    background: transparent;
+}
+.sticky-top .navbar{
+    background: black;
 }
 .nav-link{
-	color: white !important;
-	font-size: 16px;
-	font-weight: 600;
-	margin-left: 16px;
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 16px;
 }
 .nav-link:hover{
-	color: #92989b !important;
-	font-weight: 600;
+    color: #92989b !important;
+    font-weight: 600;
 }
+/* Header CSS End here */
+/* Banner CSS Start from here */
 .banner{
-	width: 100%;
-	background: url(../img/background\ 1.png) center no-repeat;
-	background-size: cover;
-	height: 100vh;
+    width: 100%;
+    background: url(../img/background\ 1.png) center no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 .banner-text,.banner-form{
-	display: table-cell;
-	height: 96vh;
-	vertical-align: middle;
+    display: table-cell;
+    height: 96vh;
+    vertical-align: middle;
 }
 .banner-title{
-	color: white;
-	font-weight: 600;
-	font-size: 86px;
-	font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 86px;
+    font-family: 'Open Sans', sans-serif;
 }
 .banner-title span{
-	font-weight: 300;
-	color: #ff9b51;
+    font-weight: 300;
+    color: #ff9b51;
 }
 .banner-titl{
-	font-family: 'Raleway', sans-serif;
-	color: white;
-	font-size: 36px;
-	font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
 }
 .banner-text p{
-	color: #aaa;
-	font-family: 'Raleway', sans-serif;
-	width: 70%;
-	margin-bottom: 32px;
+    color: #ddd;
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    margin-bottom: 32px;
 }
 .banner-text .line{
-	height: 4px;
-	background: white;
-	width: 100px;
-	margin: 32px 0px;
+    height: 4px;
+    background: white;
+    width: 100px;
+    margin: 32px 0px;
 }
-.banner-btn{
-	padding: 14px 42px;
-	background: transparent;
-	color: white;
-	border: 1px solid white;
-	font-family: 'Raleway', sans-serif;
-	border-radius: 0px 10px;
+/* Theme button base (same color everywhere) */
+.btn-theme{
+    background: var(--color-btn-bg);
+    color: var(--color-btn-text) !important;
+    border: none;
+    border-radius: .5rem;
 }
-.banner-btn:hover{
-	background: #fa9951;
-	color: black;
-	transition: 0.3s;
-	border-radius: 10px 0px;
-	font-family: 'Raleway', sans-serif;
+.btn-theme:hover{ color: var(--color-btn-text) !important; }
 
+/* Unique hover variants (shape/motion only) */
+.btn-variant-1{ transition: transform .25s, box-shadow .25s; }
+.btn-variant-1:hover{ transform: translateY(-2px) scale(1.03); box-shadow: 0 10px 25px rgba(0,0,0,.15); }
+
+.btn-variant-2{ border-radius:.5rem; transition: border-radius .25s, box-shadow .25s; }
+.btn-variant-2:hover{ border-radius:2rem; box-shadow: 0 0 0 .25rem rgba(255,139,56,.25); }
+
+.btn-variant-3{ position:relative; overflow:hidden; }
+.btn-variant-3::after{
+    content:""; position:absolute; inset:0; background: rgba(255,255,255,.12);
+    clip-path: polygon(0 0,0 0,0 100%,0 100%); transition: clip-path .3s ease;
 }
+.btn-variant-3:hover::after{ clip-path: polygon(0 0,100% 0,100% 100%,0 100%); }
+
+.btn-variant-4{ transition: transform .25s ease; }
+.btn-variant-4:hover{ transform: translateY(-3px); }
+
+.btn-variant-5{ position:relative; }
+.btn-variant-5::before{ content:""; position:absolute; left:50%; top:50%; width:0; height:0; border-radius:50%; background:rgba(255,255,255,.18); transform:translate(-50%,-50%); transition: width .35s,height .35s; }
+.btn-variant-5:hover::before{ width:140%; height:140%; }
+/* Banner CSS End here */
+
+/* Unique button hover effects */
+.btn-effect-1{ position: relative; overflow: hidden; }
+.btn-effect-1::after{
+    content:""; position:absolute; left:0; top:0; height:100%; width:0; background:#ff9b51; z-index:-1; transition:width .3s;
+}
+.btn-effect-1:hover{ color:#111; border-color:#ff9b51; }
+.btn-effect-1:hover::after{ width:100%; }
+
+.btn-effect-2{ transition: transform .25s, box-shadow .25s, background .25s, color .25s; }
+.btn-effect-2:hover{ transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,.2); background:#ff8b38; color:#fff; }
+
+.btn-effect-3{ position:relative; }
+.btn-effect-3::after{ content:""; position:absolute; left:50%; bottom:-2px; width:0; height:2px; background:#ff8b38; transition: all .25s; transform:translateX(-50%); }
+.btn-effect-3:hover::after{ width:80%; }
+
+.btn-effect-4{ transition: color .25s, border-color .25s, background .25s; border-radius:4px; }
+.btn-effect-4:hover{ background:#111; color:#ff9b51 !important; border-color:#111; }
+
+.btn-effect-5{ background: linear-gradient(90deg,#ff8b38 0,#ff9b51 100%); color:#111; border:none; transition: filter .25s, transform .25s; }
+.btn-effect-5:hover{ filter: brightness(0.9); transform: translateY(-2px); }
+/* Banner Form CSS Start from here */
 .banner-form h3{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 24px;
-	color: #333333;
-	font-weight: 600;
-	margin: 12px 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #333333;
+    font-weight: 600;
+    margin: 12px 0px;
 }
 .banner-form h3 span{
-	color: #fa9951;
+    color: #fa9951;
 }
 .banner-form .card{
-	width: 360px;
+    width: 360px;
 }
 
 .banner-form .card-header{
@@ -129,12 +248,11 @@ header{
 	border: none;
 }
 .banner-form .card-footer{
-	background: #ff9b51;
-	padding: 0;
+    background: #ff9b51;
+    padding: 0;
 }
-/*************************
-	social icon section css
-*************************/
+/* Banner Form CSS End here */
+/* Social Media CSS Start from here */
 
 .social-area {
 	width: 100%;
@@ -158,6 +276,8 @@ header{
 .social-bottom ul {
 	margin: 0;
 	line-height: 110px;
+    /* Prevent hover-scale from causing horizontal scroll */
+    overflow-x: hidden;
 }
 .social-bottom ul li img:hover {
 	cursor: pointer;
@@ -165,17 +285,16 @@ header{
 .social-bottom ul li {
 	display: inline;
 	list-style: none;
-	padding-right: 68px;
+	padding-right: 50px;
 	font-size: 35px;
 	color: #a19f9d;
 }
 .social-bottom ul li:hover{
-	color: #ff8b38;
-	transform: scale(2.0) rotate(15deg);
+    color: #ff8b38;
+    transform: scale(2.0) rotate(15deg);
 }
-/****************************
-	feayures section css
-****************************/
+/* Social Media CSS End here */
+/* Features CSS Start from here */
 
 .features-area {
 	width: 100%;
@@ -226,35 +345,42 @@ header{
 	color: #9b9595;
 }
 .features-text button {
-	padding: 10px 25px;
-	font-size: 15px;
-	background: #ff8b38;
-	border: none;
-	border-radius: 4px;
-	color: #fff;
+    padding: 10px 25px;
+    font-size: 15px;
 }
 .features-text button:hover {
-	cursor: pointer;
-	background: #565856;
-	transition: 0.3s;
-	color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .features-image {
 	margin-top: 20px;
 	text-align: center;
 }
 .colour {
-	cursor: pointer;
-	background: #ff8b38 !important;
-	transition: 0.3s;
+    cursor: pointer;
+    background: #ff8b38 !important;
+    transition: 0.3s;
 }
-/*****************
-	footer css
-******************/
+
+/* Unified card hover for card sections */
+.card-hover{ transition: transform .25s ease, box-shadow .25s ease; }
+.card-hover:hover{ transform: translateY(-6px); box-shadow: 0 16px 30px rgba(0,0,0,.15); }
+/* Features CSS End here */
+/* Reviews CSS Start from here */
+#reviews{ padding-top:3rem !important; padding-bottom:3rem !important; }
+#reviews .card{ box-sizing:border-box; border:1px solid rgba(0,0,0,.05); }
+#reviews .card-body{ align-items:center; }
+#reviews img.rounded-circle{ width:56px; height:56px; object-fit:cover; flex-shrink:0; }
+#reviews h6{ font-size: var(--fs-card-title); line-height:1.35; margin-bottom:.25rem; }
+#reviews p.small, #reviews .small{ color: var(--color-muted); line-height:1.7; }
+/* Reviews CSS End here */
+/* Footer CSS Start from here */
 .social-footer{
-	background: black;
+    background: black;
     width: 100%;
     padding: 20px 0px 20px 0px;    text-align: center;
+    /* Clip oversized hover states to avoid page shifting */
+    overflow-x: hidden;
 }
 .social-footer ul li{
     list-style: none;
@@ -272,6 +398,109 @@ header{
     line-height: 8px;
 }
 .social-footer ul li:hover{
-	color: #ff8b38;
-	transform: scale(2.0) rotate(15deg);
+    color: #ff8b38;
+    transform: scale(2.0) rotate(15deg);
 }
+/* Footer CSS End here */
+
+/* ========= Tablet (>=768px and <992px) ========= */
+/* Tablet CSS Start from here */
+@media (max-width: 991.98px){
+    :root{
+        --fs-body: 17px;
+        --fs-h1: 36px; --lh-h1: 1.2;
+        --fs-h2: 30px; --lh-h2: 1.25;
+        --fs-h3: 24px; --lh-h3: 1.3;
+        --fs-h4: 20px; --lh-h4: 1.35;
+        --fs-h5: 18px; --lh-h5: 1.4;
+        --fs-h6: 17px; --lh-h6: 1.45;
+
+        --fs-p: 16px;
+        --fs-small: 13px;
+
+        --fs-btn: 16px;
+        --btn-minh: 44px;
+
+        --fs-card-title: 18px;
+        --fs-card-subtitle: 15px;
+        --fs-card-text: 15px;
+
+        --section-pad: 48px;
+    }
+
+    .grid{ grid-template-columns: repeat(2, 1fr); }
+    .features-text p{ width: 100%; }
+    .banner-form .card{ width: 100%; }
+    .banner{ height: auto; padding: 80px 0; }
+}
+/* Tablet CSS End here */
+
+/* ========= Mobile (<768px) ========= */
+/* Mobile CSS Start from here */
+@media (max-width: 767.98px){
+    :root{
+        --fs-body: 16px;
+        --fs-h1: 28px; --lh-h1: 1.22;
+        --fs-h2: 24px; --lh-h2: 1.26;
+        --fs-h3: 20px; --lh-h3: 1.3;
+        --fs-h4: 18px; --lh-h4: 1.35;
+        --fs-h5: 16px; --lh-h5: 1.4;
+        --fs-h6: 15px; --lh-h6: 1.45;
+
+        --fs-p: 14.5px;
+        --fs-small: 12.5px;
+
+        --fs-btn: 15px;
+        --btn-minh: 44px; /* মোবাইলে ট্যাপ-সাইজ রাখছি 44px+ */
+        --btn-pad: 0.55rem 1rem;
+
+        --fs-card-title: 17px;
+        --fs-card-subtitle: 14px;
+        --fs-card-text: 14.5px;
+
+        --section-pad: 40px;
+        --gap: .9rem;
+    }
+
+    /* Mobile utility: center text */
+    .text-center-sm{ text-align:center; }
+    /* Mobile utility: center card/button */
+    .center-sm{ display:flex; justify-content:center; align-items:center; }
+
+    /* Clamp utility: max 3 lines for paragraphs */
+    .clamp-3{ display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient: vertical; overflow:hidden; }
+
+    /* Mobile-only: hide one social icon (last) */
+    .social-area .social-bottom ul li:last-child{ display:none; }
+
+    /* Mobile-only: make features tabs horizontal */
+    .features-tab{ display:flex; flex-direction: row; }
+    .features-tab .tab{
+        width: 33.333%;
+        height: 60px;
+        line-height: 60px;
+        border-bottom: none;
+        border-right: 1px solid #fff;
+    }
+    .features-tab .tab:last-child{ border-right: none; }
+    .features-tab .tab:first-child,
+    .features-tab .tab:last-child{ border-radius: 0; }
+
+    /* Fix right-side empty space on small screens */
+    .social-area .social-top p{ width: 100% !important; }
+    .banner-text p{ width: 100%; }
+}
+/* Mobile CSS End here */
+
+/* ========= Optional: Navbar sticky & spacing ========= */
+header.sticky-top{ top:0; z-index:1000; }
+.nav-link{ transition: color .2s, opacity .2s; }
+.nav-link:hover{ color:#0d6efd; opacity:.85; }
+
+/* Responsive Tweaks Start from here */
+@media (max-width: 991.98px){
+    .features-text p{ width: 100%; }
+    .banner-form .card{ width: 100%; }
+    .banner{ height: auto; padding: 80px 0; }
+}
+/* Responsive Tweaks End here */
