@@ -1,77 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AXIT</title>
     <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- bootstrap link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- font awesome link -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
-    <!-- custom css file  -->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- custrom css file  -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <!-- Header Start from here -->
     <header class="sticky-top">
-        <!-- Header HTML Start from here -->
+        <!-- Header section code start from here -->
         <div class="container">
-            <div class="row top-header">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-expand-md navbar-dark">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#home">
-                                <img src="img/logo.png" alt="AXIT logo">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                                    <!-- Common items -->
-                                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#features">Features</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                                    <!-- Tablet/Desktop items (visible from md and up) -->
-                                    <li class="nav-item d-none d-md-block"><a class="nav-link" href="#pricing">Pricing</a></li>
-                                    <li class="nav-item d-none d-md-block"><a class="nav-link" href="#reviews">Reviews</a></li>
-                                    <li class="nav-item d-none d-md-block"><a class="nav-link" href="#contact">Contact</a></li>
-                                    <!-- Mobile only: overflow items as dropdown -->
-                                    <li class="nav-item dropdown d-md-none">
-                                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
-                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreDropdown">
-                                            <li><a class="dropdown-item" href="#pricing">Pricing</a></li>
-                                            <li><a class="dropdown-item" href="#reviews">Reviews</a></li>
-                                            <li><a class="dropdown-item" href="#contact">Contact</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#home">
+                    <img src="img/logo.png" alt="AXIT Logo">
+                </a>
+                <ul class="navbar-nav ms-auto flex-row">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="btn nav-contact-btn" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Header section code end from here -->
+            <!-- banner section start from here-->
         </div>
-        <!-- Header HTML End here -->
     </header>
-    <!-- Header End here -->
-
-    <!-- Banner Start from here -->
     <section class="banner" id="home">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 text-center text-md-start">
+                <div class="col-md-7">
                     <div class="banner-text">
                         <h1 class="banner-title">AX<span>IT</span></h1>
                         <h1 class="banner-titl">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                         <div class="line"></div>
-                        <p class="clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                            Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
                         <div>
-                            <button class="btn btn-theme btn-variant-1">Download</button>
+                            <button class="banner-btn btn-effect-1">Download</button>
                         </div>
                     </div>
                 </div>
@@ -85,18 +69,19 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input type="text" name="" class="form-control" placeholder="Name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" name="" class="form-control" placeholder="Email">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control last" placeholder="Password">
+                                        <input type="password" name="" class="form-control last" placeholder="Password">
                                     </div>
                                 </div>
                                 <div class="card-footer">
                                     <div class="form-group">
-                                        <input type="submit" class="Submit-btn btn btn-theme btn-variant-2" value="Get Started">
+                                        <input type="Submit" name="" class="Submit-btn btn-effect-2"
+                                            value="Get Started">
                                     </div>
                                 </div>
                             </div>
@@ -105,34 +90,39 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <!-- Banner End here -->
 
-    <!-- Social Media Start from here -->
+    <!-- banner section end from here-->
+    <!-- social media section code start form here -->
     <section class="social-area">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 social-top">
-                    <h2>Social Media</h2>
-                    <p>Follow us for updates, tips and resources.</p>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="social-top">
+                        <h2>Social Media</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    </div>
                 </div>
-                <div class="col-md-6 social-bottom">
-                    <ul>
-                        <li><i class="fab fa-facebook-f"></i></li>
-                        <li><i class="fab fa-google-plus"></i></li>
-                        <li><i class="fab fa-twitter"></i></li>
-                        <li><i class="fab fa-pinterest"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
-                        <li><i class="fab fa-stumbleupon"></i></li>
-                        <li><i class="fas fa-wifi"></i></li>
-                    </ul>
+                <div class="col-md-7">
+                    <div class="social-bottom">
+                        <ul>
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-google-plus"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-pinterest"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li><i class="fab fa-stumbleupon"></i></li>
+                            <li><i class="fas fa-wifi"></i></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <!-- Social Media End here -->
-
-    <!-- Features Start from here -->
+    <!-- social media section code End form here -->
+    <!-- slide section code start form here -->
     <section class="features-area" id="features">
         <div class="container">
             <div class="row">
@@ -144,54 +134,61 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <div class="features-text f-t-1">
+                    <div class="features-text f-t-1" style="">
                         <h2>Tabs with soft transitioning effect. Content-1.1</h2>
-                        <p class="clamp-3">1.1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
-                        <p class="clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                        <button class="btn btn-theme btn-variant-2">Download</button>
+                        <p>1.1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                            Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                            tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        <button class="btn-effect-2">Download</button>
                     </div>
-                    <div class="features-text f-t-2">
+                    <div class="features-text f-t-2" style="">
                         <h2>Tabs with soft transitioning effect. Content-2.2</h2>
-                        <p class="clamp-3">2.2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
-                        <p class="clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                        <button class="btn btn-theme btn-variant-3">Download</button>
+                        <p>2.2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                            Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                            tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        <button class="btn-effect-3">Download</button>
                     </div>
-                    <div class="features-text f-t-3">
+                    <div class="features-text f-t-3" style="">
                         <h2>Tabs with soft transitioning effect. Content-3.3</h2>
-                        <p class="clamp-3">3.3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
-                        <p class="clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                        <button class="btn btn-theme btn-variant-4">Download</button>
+                        <p>3.3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                            Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                            tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        <button class="btn-effect-4">Download</button>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="features-image text-center">
-                        <img src="img/banner.png" alt="Feature Graphic">
+                    <div class="features-image">
+                        <img src="img/banner.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Features End here -->
-
-    <!-- About Start from here -->
+    <!-- slide section code end form here -->
+    <!-- sub list section code end form here -->
     <section class="feature-3" id="about">
         <div class="container">
             <div class="row title">
                 <div class="col-md-6 text-left">
                     <h6>Standard Picture Section</h6>
                     <img src="img/devider.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                        gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+                        Cum sociis natoque penatibus et magnis dis parturient monte</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="img/feature2.png" class="img-fluid" alt="Feature">
+                    <img src="img/feature2.png" class="img-fluid">
                 </div>
+
             </div>
         </div>
     </section>
-    <!-- About End here -->
 
-    <!-- Pricing Start from here -->
+    <!-- Pricing section -->
     <section id="pricing" class="py-5 bg-light">
         <div class="container">
             <div class="row mb-4">
@@ -211,7 +208,7 @@
                                 <li>Single user</li>
                                 <li>Email support</li>
                             </ul>
-                            <a href="#contact" class="btn btn-theme btn-variant-5">Buy Now</a>
+                            <a href="#contact" class="btn btn-outline-dark btn-effect-5">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -225,7 +222,7 @@
                                 <li>Up to 5 users</li>
                                 <li>Priority support</li>
                             </ul>
-                            <a href="#contact" class="btn btn-theme btn-variant-2">Buy Now</a>
+                            <a href="#contact" class="btn btn-dark btn-effect-2">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -239,16 +236,15 @@
                                 <li>Unlimited users</li>
                                 <li>Dedicated success manager</li>
                             </ul>
-                            <a href="#contact" class="btn btn-theme btn-variant-3">Buy Now</a>
+                            <a href="#contact" class="btn btn-outline-dark btn-effect-3">Buy Now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Pricing End here -->
 
-    <!-- Reviews Start from here -->
+    <!-- Testimonials / Reviews section -->
     <section id="reviews" class="py-5">
         <div class="container">
             <div class="row mb-4">
@@ -264,7 +260,8 @@
                             <img src="img/avater.png" alt="Reviewer" class="rounded-circle me-3" width="56" height="56">
                             <div>
                                 <h6 class="mb-1">Alex</h6>
-                                <p class="mb-0 small text-muted">"Fantastic template. Easy to customize and looks great on mobile."</p>
+                                <p class="mb-0 small text-muted">“Fantastic template. Easy to customize and looks great
+                                    on mobile.”</p>
                             </div>
                         </div>
                     </div>
@@ -275,7 +272,8 @@
                             <img src="img/avater.png" alt="Reviewer" class="rounded-circle me-3" width="56" height="56">
                             <div>
                                 <h6 class="mb-1">Riya</h6>
-                                <p class="mb-0 small text-muted">"The grid is clean, and the sections connect perfectly."</p>
+                                <p class="mb-0 small text-muted">“The grid is clean, and the sections connect
+                                    perfectly.”</p>
                             </div>
                         </div>
                     </div>
@@ -286,7 +284,7 @@
                             <img src="img/avater.png" alt="Reviewer" class="rounded-circle me-3" width="56" height="56">
                             <div>
                                 <h6 class="mb-1">Samir</h6>
-                                <p class="mb-0 small text-muted">"Love the button effects. Each feels unique!"</p>
+                                <p class="mb-0 small text-muted">“Love the button effects. Each feels unique!”</p>
                             </div>
                         </div>
                     </div>
@@ -294,9 +292,8 @@
             </div>
         </div>
     </section>
-    <!-- Reviews End here -->
 
-    <!-- Contact Start from here -->
+    <!-- Contact section -->
     <section id="contact" class="py-5 bg-light">
         <div class="container">
             <div class="row mb-4">
@@ -313,18 +310,21 @@
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <label for="contactName" class="form-label">Name</label>
-                                        <input type="text" id="contactName" class="form-control" placeholder="Your name">
+                                        <input type="text" id="contactName" class="form-control"
+                                            placeholder="Your name">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="contactEmail" class="form-label">Email</label>
-                                        <input type="email" id="contactEmail" class="form-control" placeholder="you@example.com">
+                                        <input type="email" id="contactEmail" class="form-control"
+                                            placeholder="you@example.com">
                                     </div>
                                     <div class="col-12">
                                         <label for="contactMsg" class="form-label">Message</label>
-                                        <textarea id="contactMsg" rows="4" class="form-control" placeholder="How can we help?"></textarea>
+                                        <textarea id="contactMsg" rows="4" class="form-control"
+                                            placeholder="How can we help?"></textarea>
                                     </div>
-                                    <div class="col-12 text-end text-center-sm center-sm">
-                                        <button type="submit" class="btn btn-theme btn-variant-4">Send Message</button>
+                                    <div class="col-12 text-end">
+                                        <button type="submit" class="btn btn-dark btn-effect-4">Send Message</button>
                                     </div>
                                 </div>
                             </form>
@@ -334,11 +334,11 @@
             </div>
         </div>
     </section>
-    <!-- Contact End here -->
+    <!-- "footer section code Start form here -->
 
-    <!-- Footer Start from here -->
     <section class="footer">
-        <div class="row footer-1">
+        <div class="container">
+            <div class="row footer-1">
             <div class="col-md-12">
                 <div class="social-footer">
                     <ul>
@@ -350,65 +350,76 @@
                         <li><i class="fab fa-stumbleupon"></i></li>
                         <li><i class="fas fa-wifi"></i></li>
                     </ul>
-                    <p>Ac 2021 Axure Themes</p>
+                    <p>© 2021 Axure Themes</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Footer End here -->
-
-    <!-- Scripts Start from here -->
+    <!-- "footer section code end form here -->
     <!-- link js file -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- jquery link file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- custom js file -->
-    <script>
-        // Sticky Script Start from here
-        window.addEventListener('scroll', function(){
-            var header = document.querySelector('header');
-            header.classList.toggle('sticky',window.scrollY>0)
-        })
-        // Sticky Script End here
+    <script type="">
 
-        // Features Tabs Script Start from here
+        window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY>0)
+        })
+
+
+        // jquery
         $(document).ready(function(){
+
+        $('.f-t-2').hide();
+        $('.f-t-3').hide();
+        $('.tb-1').addClass('color');
+
+          // tab-1
+        $('.tb-1').on('click',function(){
+            $('.f-t-1').show();
             $('.f-t-2').hide();
             $('.f-t-3').hide();
-            $('.tb-1').addClass('color');
 
-            // tab-1
-            $('.tb-1').on('click',function(){
-                $('.f-t-1').show();
-                $('.f-t-2').hide();
-                $('.f-t-3').hide();
-                $('.tb-1').addClass('colour');
-                $('.tb-2').removeClass('colour');
-                $('.tb-3').removeClass('colour');
-            });
+            //color
+            $('.tb-1').addClass('colour');
+            $('.tb-2').removeClass('colour');
+            $('.tb-3').removeClass('colour');
 
-            // tab-2
-            $('.tb-2').on('click',function(){
-                $('.f-t-1').hide();
-                $('.f-t-2').show();
-                $('.f-t-3').hide();
-                $('.tb-1').removeClass('colour');
-                $('.tb-2').addClass('colour');
-                $('.tb-3').removeClass('colour');
-            });
-
-            // tab-3
-            $('.tb-3').on('click',function(){
-                $('.f-t-1').hide();
-                $('.f-t-2').hide();
-                $('.f-t-3').show();
-                $('.tb-1').removeClass('colour');
-                $('.tb-2').removeClass('colour');
-                $('.tb-3').addClass('colour');
-            });
         });
-        // Features Tabs Script End here
+
+          // tab-2
+        $('.tb-2').on('click',function(){
+            $('.f-t-1').hide();
+            $('.f-t-2').show();
+            $('.f-t-3').hide();
+
+            //color
+            $('.tb-1').removeClass('colour');
+            $('.tb-2').addClass('colour');
+            $('.tb-3').removeClass('colour');
+
+
+        });
+
+          // tab-3
+        $('.tb-3').on('click',function(){
+            $('.f-t-1').hide();
+            $('.f-t-2').hide();
+            $('.f-t-3').show();
+
+            //color
+            $('.tb-1').removeClass('colour');
+            $('.tb-2').removeClass('colour');
+            $('.tb-3').addClass('colour');
+
+
+        });
+
+        });
+
     </script>
-    <!-- Scripts End here -->
 </body>
+
 </html>
